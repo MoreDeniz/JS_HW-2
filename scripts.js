@@ -23,14 +23,14 @@ alert((positive > 0 && negative < 0) ? `Все значения верные.` :
 Если есть какие-либо недочеты в коде, можете их исправить.
 */
 
-// const test = confirm("У вас много денег?");
-// if (test === true) {
-//   console.log("Скоро будем у вас;)");
-// } else {
-//   console.log("До свидания.");
-// }
+const test = confirm("У вас много денег?");
+if (test) {
+  console.log("Скоро будем у вас;)");
+} else {
+  console.log("До свидания.");
+}
 
-// alert((test === true) ? `Скоро будем у вас)` : `До свидания.`);
+alert((test) ? `Скоро будем у вас)` : `До свидания.`);
 
 
 /*
@@ -47,20 +47,20 @@ alert((positive > 0 && negative < 0) ? `Все значения верные.` :
 число 32.
 */
 
-// const dayNumber = Number(prompt('Введите целое число в интервале [1, 32).'));
-// if (dayNumber < 1 || dayNumber >= 32) {
-//     alert(`Неверное значение`);
-// } else {
-//     if (dayNumber / 10 <= 1) {
-//         alert(`Число ${dayNumber} попадает в 1-ю декаду месяца.`);
-//     } else if (dayNumber / 10 > 1 && dayNumber / 10 <= 2) {
-//         alert(`Число ${dayNumber} попадает во 2-ю декаду месяца.`);
-//     } else if (dayNumber / 10 > 2 && dayNumber / 10 <= 3) {
-//         alert(`Число ${dayNumber} попадает в 3-ю декаду месяца.`);
-//     } else if (dayNumber === 31) {
-//         alert(`Число ${dayNumber} попадает в 4-ю декаду месяца.`);
-//     }
-// }
+const dayNumber = Number(prompt('Введите целое число в интервале [1, 32).'));
+if (dayNumber < 1 || dayNumber >= 32) {
+    alert(`Неверное значение`);
+} else {
+    if (dayNumber / 10 <= 1) {
+        alert(`Число ${dayNumber} попадает в 1-ю декаду месяца.`);
+    } else if (dayNumber / 10 > 1 && dayNumber / 10 <= 2) {
+        alert(`Число ${dayNumber} попадает во 2-ю декаду месяца.`);
+    } else if (dayNumber / 10 > 2 && dayNumber / 10 <= 3) {
+        alert(`Число ${dayNumber} попадает в 3-ю декаду месяца.`);
+    } else if (dayNumber === 31) {
+        alert(`Число ${dayNumber} попадает в 3-ю декаду месяца.`);
+    }
+}
 
 
 /*
@@ -86,9 +86,9 @@ alert((positive > 0 && negative < 0) ? `Все значения верные.` :
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// const userNumber = Number(prompt('Введите положительное целое число.'));
-// const unitsNumber = userNumber % 10;
-// const tensNumber = Math.floor(userNumber / 10) % 10;
-// const hundredsNumber = Math.floor(userNumber / 100) % 10;
+const userNumber = Number(prompt('Введите положительное целое число.'));
+const unitsNumber = userNumber % 10;
+const tensNumber = Math.floor(userNumber / 10) % 10;
+const hundredsNumber = Math.floor(userNumber / 100) % 10;
 
-// alert(`В числе ${userNumber} количество сотен: ${hundredsNumber}, десятков: ${tensNumber}, единиц: ${unitsNumber}`);
+alert(`В числе ${userNumber} количество сотен: ${hundredsNumber}, десятков: ${tensNumber}, единиц: ${unitsNumber}`);
